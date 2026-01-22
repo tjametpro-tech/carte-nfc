@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jamet;Thomas;;;
+FN:Thomas Jamet
+ORG:CIFEM VIDEO
+TITLE:Prestations vidéo événementielles
+TEL;TYPE=WORK,CELL:+33627255863
+EMAIL;TYPE=WORK:thomas.jamet@cifemvideo.com
+URL:https://www.cifemvideo.com/
+ADR;TYPE=WORK:;;Angers;;;France
+END:VCARD
