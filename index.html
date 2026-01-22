@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thomas Jamet — Technicien lumière & vidéo</title>
+  <meta name="description" content="Carte de visite virtuelle — Thomas Jamet, technicien lumière & vidéo, intermittent du spectacle à Angers." />
+
+  <!-- Aperçu quand on partage le lien -->
+  <meta property="og:title" content="Thomas Jamet — Technicien lumière & vidéo" />
+  <meta property="og:description" content="Contact • Portfolio • Ajouter au contact" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --card:rgba(255,255,255,.06);
+      --text:#eef2f8;
+      --muted:rgba(238,242,248,.7);
+      --border:rgba(255,255,255,.12);
+      --accent:#8ab4ff;
+      --radius:18px;
+      --shadow:0 20px 60px rgba(0,0,0,.45);
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(138,180,255,.18), transparent 60%),
+        radial-gradient(700px 400px at 85% 30%, rgba(255,255,255,.10), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .wrap{ width:100%; max-width:520px; }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      padding:22px;
+    }
+
+    .avatar{
+      width:64px;
+      height:64px;
+      border-radius:18px;
+      background:rgba(255,255,255,.12);
+      border:1px solid var(--border);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      letter-spacing:.5px;
+    }
+
+    h1{
+      margin:0 0 6px;
+      font-size:22px;
+      line-height:1.2;
+    }
+
+    .role{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .badges{
+      padding:0 22px 18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .badge{
+      font-size:12px;
+      padding:7px 10px;
+      border-radius:999px;
+      background:rgba(0,0,0,.18);
+      border:1px solid var(--border);
+      white-space:nowrap;
+    }
+
+    .links{
+      padding:0 22px 22px;
+      display:grid;
+      gap:10px;
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px;
+      border-radius:14px;
+      text-decoration:none;
+      color:var(--text);
+      background:rgba(0,0,0,.22);
+      border:1px solid var(--border);
+      transition:transform .06s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      background:rgba(0,0,0,.30);
+      border-color:rgba(138,180,255,.35);
+    }
+
+    .left{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+    .icon{
+      width:38px;
+      height:38px;
+      border-radius:12px;
+      background:rgba(138,180,255,.16);
+      border:1px solid rgba(138,180,255,.28);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:18px;
+      flex:0 0 auto;
+    }
+
+    .label{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+
+    .label strong{
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .label span{
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:320px;
+    }
+
+    footer{
+      padding:14px 22px 18px;
+      border-top:1px solid var(--border);
+      font-size:12px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+    }
+
+    @media(max-width:420px){
+      h1{ font-size:20px; }
+      .avatar{ width:56px; height:56px; border-radius:16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+
+      <header>
+        <div class="avatar">TJ</div>
+        <div>
+          <h1>Thomas Jamet</h1>
+          <p class="role">Technicien lumière & vidéo — Intermittent du spectacle</p>
+        </div>
+      </header>
+
+      <div class="badges">
+        <div class="badge">Lumière</div>
+        <div class="badge">Vidéo</div>
+        <div class="badge">Régie</div>
+        <div class="badge">LED / Mapping</div>
+        <div class="badge">Angers & mobilité</div>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="tel:+33627255863">
+          <div class="left">
+            <div class="icon">📞</div>
+            <div class="label">
+              <strong>Appeler</strong>
+              <span>+33 6 27 25 58 63</span>
+            </div>
+          </div>
+          <span>›</span>
+        </a>
+
+        <a class="btn" href="mailto:tjamet.pro@gmail.com">
+          <div class="left">
+            <div class="icon">✉️</div>
+            <div class="label">
+              <strong>Email</strong>
+              <span>tjamet.pro@gmail.com</span>
+            </div>
+          </div>
+          <span>›</span>
+        </a>
+
+        <a class="btn" href="./contact.vcf">
+          <div class="left">
+            <div class="icon">👤</div>
+            <div class="label">
+              <strong>Ajouter au contact</strong>
+              <span>Enregistrer la fiche</span>
+            </div>
+          </div>
+          <span>›</span>
+        </a>
+      </div>
+
+      <footer>
+        <span>© <span id="year"></span> Thomas Jamet</span>
+        <span>Angers • France</span>
+      </footer>
+
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
