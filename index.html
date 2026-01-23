@@ -4,11 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thomas Jamet – CIFEM VIDEO</title>
-  <meta name="description" content="Thomas Jamet – CIFEM VIDEO | Prestataire technique audiovisuel (son, lumière, vidéo)." />
-
-  <meta property="og:title" content="Thomas Jamet – CIFEM VIDEO" />
-  <meta property="og:description" content="Prestataire technique audiovisuel (son, lumière, vidéo)" />
-  <meta property="og:type" content="website" />
 
   <style>
     :root{
@@ -18,8 +13,8 @@
       --muted:rgba(238,242,248,.72);
       --border:rgba(255,255,255,.12);
       --accent:#8ab4ff;
-      --radius:18px;
-      --shadow:0 20px 60px rgba(0,0,0,.45);
+      --radius:16px;
+      --shadow:0 16px 50px rgba(0,0,0,.45);
     }
 
     *{box-sizing:border-box}
@@ -27,7 +22,7 @@
     body{
       margin:0;
       min-height:100vh;
-      padding:24px;
+      padding:16px;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
       background:
         radial-gradient(900px 500px at 15% 10%, rgba(138,180,255,.18), transparent 60%),
@@ -39,7 +34,7 @@
       justify-content:center;
     }
 
-    .wrap{width:100%; max-width:620px}
+    .wrap{width:100%; max-width:560px}
 
     .card{
       position:relative;
@@ -50,128 +45,119 @@
       overflow:hidden;
     }
 
-    /* LOGO EN ARRIÈRE-PLAN */
     .bg-logo{
       position:absolute;
-      inset:-20%;
-      background:url("./logo-cifem-video.jpg") center / 55% no-repeat;
-      opacity:0.08;
+      inset:-25%;
+      background:url("./logo-cifem-video.jpg") center / 60% no-repeat;
+      opacity:0.07;
       filter:blur(2px);
       pointer-events:none;
     }
 
-    .content{
-      position:relative;
-      z-index:1;
-    }
+    .content{position:relative; z-index:1}
 
     header{
-      padding:22px;
+      padding:16px;
       display:flex;
-      gap:16px;
+      gap:12px;
       align-items:center;
     }
 
     .photo{
-      width:72px;
-      height:72px;
-      border-radius:20px;
+      width:56px;
+      height:56px;
+      border-radius:16px;
       object-fit:cover;
       border:1px solid var(--border);
       flex-shrink:0;
     }
 
     h1{
-      margin:0 0 6px;
-      font-size:22px;
-      line-height:1.2;
+      margin:0 0 4px;
+      font-size:18px;
+      line-height:1.15;
     }
 
     .sub{
       margin:0;
+      font-size:12px;
       color:var(--muted);
-      font-size:14px;
     }
 
     .badges{
-      padding:0 22px 18px;
+      padding:0 16px 12px;
       display:flex;
       flex-wrap:wrap;
-      gap:8px;
+      gap:6px;
     }
 
     .badge{
-      font-size:12px;
-      padding:7px 10px;
+      font-size:11px;
+      padding:5px 8px;
       border-radius:999px;
-      background:rgba(0,0,0,.25);
+      background:rgba(0,0,0,.28);
       border:1px solid var(--border);
       white-space:nowrap;
     }
 
     .links{
-      padding:0 22px 22px;
+      padding:0 16px 12px;
       display:grid;
-      gap:10px;
+      gap:8px;
     }
 
     .btn{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:12px;
-      padding:14px;
-      border-radius:14px;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:12px;
       text-decoration:none;
       color:var(--text);
       background:rgba(0,0,0,.30);
       border:1px solid var(--border);
-      transition:transform .06s ease, background .2s ease, border-color .2s ease;
-    }
-
-    .btn:hover{
-      transform:translateY(-1px);
-      background:rgba(0,0,0,.40);
-      border-color:rgba(138,180,255,.45);
     }
 
     .primary{
-      background:linear-gradient(135deg, rgba(138,180,255,.25), rgba(138,180,255,.10));
+      background:linear-gradient(135deg, rgba(138,180,255,.25), rgba(138,180,255,.12));
       border-color:rgba(138,180,255,.45);
     }
 
     .left{
       display:flex;
       align-items:center;
-      gap:12px;
+      gap:10px;
     }
 
     .icon{
-      width:38px;
-      height:38px;
-      border-radius:12px;
-      background:rgba(138,180,255,.20);
+      width:30px;
+      height:30px;
+      border-radius:10px;
+      background:rgba(138,180,255,.22);
       border:1px solid rgba(138,180,255,.35);
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:18px;
+      font-size:15px;
+      flex-shrink:0;
     }
 
     .label strong{
-      font-size:14px;
-      font-weight:650;
+      font-size:13px;
+      font-weight:600;
+      line-height:1.1;
     }
 
     .label span{
-      font-size:12px;
+      font-size:11px;
       color:var(--muted);
     }
 
     footer{
-      padding:14px 22px 18px;
+      padding:10px 16px;
       border-top:1px solid var(--border);
-      font-size:12px;
+      font-size:11px;
       color:var(--muted);
       display:flex;
       justify-content:space-between;
@@ -197,22 +183,20 @@
 
         <div class="badges">
           <div class="badge">Prestataire technique</div>
-          <div class="badge">Sonorisation</div>
+          <div class="badge">Son</div>
           <div class="badge">Lumière</div>
           <div class="badge">Vidéo</div>
-          <div class="badge">Régie technique</div>
-          <div class="badge">Événementiel & spectacle</div>
+          <div class="badge">Régie</div>
           <div class="badge">Captation</div>
           <div class="badge">Broadcast</div>
           <div class="badge">Scène</div>
-          <div class="badge">Diffusion écran LED</div>
-          <div class="badge">Diffusion vidéo projection</div>
+          <div class="badge">LED</div>
+          <div class="badge">Projection</div>
         </div>
 
         <div class="links">
 
-          <a class="btn primary"
-             href="mailto:thomas.jamet@cifemvideo.com?subject=Demande%20de%20devis%20-%20CIFEM%20VIDEO">
+          <a class="btn primary" href="mailto:thomas.jamet@cifemvideo.com?subject=Demande%20de%20devis%20-%20CIFEM%20VIDEO">
             <div class="left">
               <div class="icon">🧾</div>
               <div class="label">
@@ -220,7 +204,7 @@
                 <span>Mail pré-rempli</span>
               </div>
             </div>
-            <span>›</span>
+            ›
           </a>
 
           <a class="btn" href="https://www.cifemvideo.com/" target="_blank">
@@ -228,21 +212,21 @@
               <div class="icon">🌐</div>
               <div class="label">
                 <strong>Site web</strong>
-                <span>www.cifemvideo.com</span>
+                <span>cifemvideo.com</span>
               </div>
             </div>
-            <span>›</span>
+            ›
           </a>
 
           <a class="btn" href="https://heyzine.com/flip-book/efdbac65e0.html" target="_blank">
             <div class="left">
               <div class="icon">📄</div>
               <div class="label">
-                <strong>Plaquette commerciale</strong>
+                <strong>Plaquette</strong>
                 <span>Présentation CIFEM VIDEO</span>
               </div>
             </div>
-            <span>›</span>
+            ›
           </a>
 
           <a class="btn" href="tel:+33627255863">
@@ -253,7 +237,7 @@
                 <span>+33 6 27 25 58 63</span>
               </div>
             </div>
-            <span>›</span>
+            ›
           </a>
 
           <a class="btn" href="./ThomasJamet.vcf">
@@ -261,25 +245,21 @@
               <div class="icon">👤</div>
               <div class="label">
                 <strong>Ajouter le contact</strong>
-                <span>Thomas Jamet — CIFEM VIDEO</span>
+                <span>Thomas Jamet</span>
               </div>
             </div>
-            <span>›</span>
+            ›
           </a>
 
         </div>
 
         <footer>
-          <span>© <span id="year"></span> CIFEM VIDEO</span>
-          <span>Basé à Angers</span>
+          <span>© 2026 CIFEM VIDEO</span>
+          <span>Angers</span>
         </footer>
 
       </div>
     </section>
   </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
